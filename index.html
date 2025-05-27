@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Activity Quest ✨</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating sakura petals -->
+    <div class="sakura sakura1"></div>
+    <div class="sakura sakura2"></div>
+    <div class="sakura sakura3"></div>
+    <div class="sakura sakura4"></div>
+    <div class="sakura sakura5"></div>
+    <div class="sakura sakura6"></div>
+    <div class="sakura sakura7"></div>
+
+    <div class="container">
+        <div class="header">
+            <h1>🌸 Anime Activity Quest ✨</h1>
+            <p>"In the garden of possibilities, every choice blooms into adventure"</p>
+        </div>
+
+        <div class="filters">
+            <div class="filter-group">
+                <label for="type">🎯 Quest Type:</label>
+                <select id="type">
+                    <option value="">Any Adventure</option>
+                    <option value="education">📚 Education</option>
+                    <option value="recreational">🎮 Recreational</option>
+                    <option value="social">👥 Social</option>
+                    <option value="charity">💝 Charity</option>
+                    <option value="cooking">🍜 Cooking</option>
+                    <option value="relaxation">🧘 Relaxation</option>
+                    <option value="busywork">⚡ Busywork</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="participants">👫 Party Size:</label>
+                <select id="participants">
+                    <option value="">Any Size</option>
+                    <option value="1">Solo Journey</option>
+                    <option value="2">Dynamic Duo</option>
+                    <option value="3">Triple Alliance</option>
+                    <option value="4">Squad Goals</option>
+                    <option value="5">Fantastic Five</option>
+                    <option value="6">Heroic Six</option>
+                    <option value="8">Elite Eight</option>
+                </select>
+            </div>
+            
+            <button class="quest-btn" onclick="fetchActivity()">🚀 Begin Quest!</button>
+        </div>
+
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Summoning your perfect adventure...</p>
+        </div>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
